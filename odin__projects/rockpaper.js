@@ -38,12 +38,13 @@ else if(playerSelection == computerSelection){
 }
 
 }
-playerSelection = prompt("Please select one Rock, Paper, or Scissors")
-computerSelection = computerPlay()
-console.log(playRounds(playerSelection, computerSelection))
 
-for(let i = 0; i <=5; i++) {
-function gamePlay() {
+
+for(let i = 1; i <=5; i++) {
+    playerSelection = prompt("Please select one Rock, Paper, or Scissors")
+    computerSelection = computerPlay()
+    console.log(playRounds(playerSelection, computerSelection))
+    function gamePlay() {
         if(playerSelection =="Rock" && computerSelection == "Paper" || playerSelection =="Scissors" && computerSelection == "Rock" || computerSelection =="Scissor" && playerSelection == "Paper")
          {
             computerPoints += 1;
